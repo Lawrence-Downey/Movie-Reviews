@@ -1,0 +1,57 @@
+.App {
+  text-align: center;
+}
+
+.poster {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+h2 {
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  h2 {
+    animation: h2-spin infinite 20s linear;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .poster {
+    animation: poster-spin infinite 10s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes poster-spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+} 
+
+@keyframes h2-spin {
+  from {
+    color: yellow;
+  }
+  to {
+    color: red;
+  }
+}
+
+.star {
+  color: tomato;
+}
