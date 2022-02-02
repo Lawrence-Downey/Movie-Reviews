@@ -7,7 +7,7 @@ export default function Movie({
     ratings,
     poster,
     onRemove = f => f
-}) {
+}){
     return (
     <>
       <br/>  
