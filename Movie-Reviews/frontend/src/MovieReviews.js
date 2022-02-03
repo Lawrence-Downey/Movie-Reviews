@@ -10,7 +10,7 @@ export default function MovieReviews({
     return (
         <div>
             <br/><h1>Movie Reviews</h1><br/>
-            {movies.map((movie, i) =>   { {console.log((movies.map()))} return <Movie key={i} movies={movie} onRemove={onRemoveMovie} /> })}   
+            {movies.map((movie, i) => {return <Movie key={i} movies={movie} onRemove={onRemoveMovie} /> })}   
             {console.log(movies)}
                    
         </div>
